@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+body{
+  background-color:#212121;
+}
+/* Navbar.css */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  z-index: 50; /* higher than z-0 of banner */
+  background: transparent;
+  color: white;
+}
+.navbar-scrolled {
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.transitioncss{
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.another-box:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 35%;
+  background: rgb(255, 234, 0);
+  pointer-events: none;
+  z-index: -1;
+}
+.landing-img {
+  --img-size: 354px;
+  position: absolute;
+  right: 20%;
+  transform: translatey(35%);
+  width: var(--img-size);
+  height: var(--img-size);
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 300;
+  box-shadow: 0 0 30px rgba(0,0,0,.2);
+  transition: opacity .3s;
+}
+
+.social-box {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: yellow;
+  border-radius: 8px;
+}
+
+.social-icon {
+  margin: 0 15px;
+  font-size: 2rem;
+}
+.bg-work{
+  background-color: #5a5a5a;
+}
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 10s ease infinite;
+}
+
+
+
+/* index.css or global.css */
+.blinking-cursor {
+  animation: blink 1s step-start infinite;
+}
+.font-family{
+  font-family: "popins", sans-serif;
+}
+.font-exp{
+  font-family: Caveat, cursive;
+  font-weight: 700;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
