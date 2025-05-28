@@ -55,7 +55,7 @@ export default function Banner() {
         </div>
         
         </div>
-        <img src="/download.jpg" className='landing-img  shadow-xl' alt="" />
+        <img src="/profileImg2.jpg" className='landing-img  shadow-xl' alt="" />
         <div class="bg-yellow-500 w-full md:w-1/3 h-screen relative overflow-hidden flex items-center justify-center">
            {/* right side area */}
            <svg
