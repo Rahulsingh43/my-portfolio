@@ -1,6 +1,7 @@
 
 import './App.css'
 import Banner from './Components/Banner'
+import Contact from './Components/Contact'
 import Education from './Components/Education'
 import Navbar from './Components/Navbar'
 import Skills from './Components/Skills'
@@ -17,12 +18,13 @@ function App() {
     <>
    <Navbar />
       <main>
-        {/* <section id="home" className="relative h-screen text-white flex items-center justify-between px-10 z-0"> */}
+        <section id="home" >
          <Banner />
-        {/* </section> */}
+        </section>
         <Skills slides={SLIDES} options={OPTIONS}/>
-        <section id="services" className="p-10"><WorkExperience /></section>
-        <section id="projects" className="p-10"><Education /></section>
+        <section id="experienceProjects" className="p-10"><WorkExperience /></section>
+        <section id="education" className="p-10"><Education /></section>
+        <section id="contact" className="p-10"><Contact /></section>
       </main>
     </>
   )

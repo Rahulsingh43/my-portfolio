@@ -30,9 +30,9 @@ export default function Navbar() {
         {/* <div className="text-2xl font-bold">mikon<span className="text-green-500">.</span></div> */}
         <ul className="flex gap-15 font-medium">
           <li><a href="#home">HOME</a></li>
-          <li><a href="#services">WORK EXPERIENCE</a></li>
-          <li><a href="#services">PROJECTS</a></li>
-          <li><a href="#projects">EDUCATION</a></li>
+          <li><a href="#experienceProjects">WORK EXPERIENCE</a></li>
+          <li><a href="#experienceProjects">PROJECTS</a></li>
+          <li><a href="#education">EDUCATION</a></li>
           {/* <li><a href="#about">ABOUT ME</a></li> */}
           <li><a href="#contact">CONTACT</a></li>
         </ul>
