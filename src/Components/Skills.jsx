@@ -19,7 +19,7 @@ const Skills = () => {
 
     return(
         <>
-        <section className="h-90">
+        <section className="h-90 mt-12">
             <h3 className="text-white text-center text-6xl font-semibold my-6 text-yellow-500 font-family">Skills</h3>
             <div className="scroll-container mt-10 py-8">
               <div className="scroll-track">

@@ -12,14 +12,13 @@ function App() {
   const OPTIONS = { loop: true }
   const SLIDE_COUNT = 8
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
-
+  
   return (
-    
     <>
    <Navbar />
       <main>
         <section id="home" >
-         <Banner />
+         <Banner /> 
         </section>
         <Skills slides={SLIDES} options={OPTIONS}/>
         <section id="experienceProjects" className="p-10"><WorkExperience /></section>

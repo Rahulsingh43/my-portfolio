@@ -5,6 +5,11 @@ import SocialLinks from './SocialLinks';
 // import bannerImg from './assets/your-image.png'; // Replace with actual image
 
 export default function Banner() {
+  const scrollToContact = () => {
+  const contactSection = document.getElementById("contact");
+  contactSection?.scrollIntoView({ behavior: "smooth" });
+};
+
   return (
     <>
       {/* <div>
@@ -19,8 +24,8 @@ export default function Banner() {
       <div>
         <img src={bannerImg} alt="Profile" className="w-[400px] rounded-lg" />
       </div> */}
-      <div class="flex flex-col md:flex-row h-screen relative">
-        <div class="w-full md:w-2/3 h-screen">
+      <div className="flex flex-col md:flex-row h-screen relative">
+        <div className="w-full md:w-2/3 h-screen">
         <div className='mt-30 ml-20'>
         {/* <h1 className="text-5xl font-bold text-yellow-500">Hello...</h1> */}
         <h1 className="text-5xl font-bold text-yellow-500"><span> I'm </span> Rahul Singh Chandela</h1>
@@ -46,7 +51,7 @@ export default function Banner() {
         <p></p>
        
         <div className="mt-12">
-          <button className="bg-white text-black px-8 py-3 rounded-full shadow hover:bg-gray-200 transition text-base font-medium cursor-pointer">Get in touch →</button>
+          <button className="bg-white text-black px-8 py-3 rounded-full shadow hover:bg-gray-200 transition text-base font-medium cursor-pointer" onClick={scrollToContact}>Get in touch →</button>
           <button className="border-3 border-yellow-500 bg-white text-black px-8 py-3 rounded-full shadow hover:bg-yellow-500 ml-12 inline-flex transition cursor-pointer">
          <svg className="fill-current w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
          <span className='text-base'> Download CV </span>
@@ -56,7 +61,7 @@ export default function Banner() {
         
         </div>
         <img src="/profileImg2.jpg" className='landing-img  shadow-xl' alt="" />
-        <div class="bg-yellow-500 w-full md:w-1/3 h-screen relative overflow-hidden flex items-center justify-center">
+        <div className="bg-yellow-500 w-full md:w-1/3 h-screen relative overflow-hidden flex items-center justify-center">
            {/* right side area */}
            <svg
   className="absolute top-0 w-full h-[80%] z-0"
