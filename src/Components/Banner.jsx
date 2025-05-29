@@ -28,7 +28,7 @@ export default function Banner() {
         <div className="w-full md:w-2/3 h-screen">
         <div className='mt-30 ml-20'>
         {/* <h1 className="text-5xl font-bold text-yellow-500">Hello...</h1> */}
-        <h1 className="text-5xl font-bold text-yellow-500"><span> I'm </span> Rahul Singh Chandela</h1>
+        <h1 className="text-4xl font-bold text-yellow-500"><span> I'm </span> Rahul Singh Chandela</h1>
         <p className="mt-8 text-md bg-yellow-100 inline-block px-2 text-black font-semibold border-l-4 border-green-400">
          {" "}
       <span className="text-black">
@@ -43,7 +43,7 @@ export default function Banner() {
         />
       </span>
         </p>
-        <p className='text-white max-w-200 text-3xl mt-12 text-wrap italic mt-5'> 
+        <p className='text-white max-w-140 text-xl mt-12 text-wrap italic mt-5'> 
         Skilled Full Stack Developer with 1 year and 6 months of experience in building user-friendly interfaces and robust backend systems.
          Experienced in creating scalable and efficient web applications.
         Passionate about learning new technologies and continuously improving development practices.
@@ -54,7 +54,7 @@ export default function Banner() {
           <button className="bg-white text-black px-8 py-3 rounded-full shadow hover:bg-gray-200 transition text-base font-medium cursor-pointer" onClick={scrollToContact}>Get in touch →</button>
           <button className="border-3 border-yellow-500 bg-white text-black px-8 py-3 rounded-full shadow hover:bg-yellow-500 ml-12 inline-flex transition cursor-pointer">
          <svg className="fill-current w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-         <span className='text-base'> Download CV </span>
+         <a href="RahulResume.pdf" download><span className='text-base'> Download CV </span></a>
           </button>
         </div>
         </div>
